@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Dongle&family=Elsie+Swash+Caps:wght@400;900&family=Funnel+Display:wght@300..800&family=Girassol&family=Pirata+One&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&family=Trocchi&family=UnifrakturMaguntia&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.aboutus-container{
+    margin-top: -20px;
+    width: 100%;
+    border: 0;  
+    overflow: hidden;
+    margin-bottom: 325px;
+}
+.aboutus-header {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aboutus-bookimage1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    
+    
+}
+.aboutus-slogan{
+    text-align: center;
+    padding: 70px;
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 7.5rem;
+    color: #4A4947;
+}
+.aboutus-heading{
+    font-family: "Girassol", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+.aboutus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+.aboutus-bookimage2{
+    height: auto;
+    width: 45%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* margin-left: 10%;
+    margin-right: 20px;    */
+    
+}
+
+.aboutus-content1{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;  
+}
+
+.aboutus-content1 p{
+    text-align: justify;
+    font-family: "Trocchi", serif;
+    font-size: 30px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.aboutus-whoarewe-heading{
+    font-family: "Girassol", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 70px;
+
+}
+
+.aboutus-whoarewe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    gap: 40px;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+    
+}
+
+.aboutus-content2{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;  
+}
+
+.aboutus-content2 p{
+    text-align: justify;
+    font-family: "Trocchi", serif;
+    font-size: 30px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.aboutus-bookimage3{
+    height: auto;
+    width: 45%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+

@@ -1,0 +1,23 @@
+.landing-container{
+    margin-bottom: 300px;
+}
+
+.viewall-button{
+    font-size: larger;
+    color: black;
+    font-weight: 700;
+    border: none;
+    margin-left: 50%;
+    color: #666;
+    position: relative;
+    padding-bottom: 2px;
+    text-decoration: none;
+    overflow:hidden;
+    cursor: pointer;
+
+}
+
+span{
+    font-size: larger;
+}
+

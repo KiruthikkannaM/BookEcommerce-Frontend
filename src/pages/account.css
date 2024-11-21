@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Dongle&family=Funnel+Display:wght@300..800&family=Pirata+One&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&family=Trocchi&display=swap');
+.accounts-form-container{
+    margin: 130px;
+    background-color: white;
+    width: 1200px;
+    max-width: 1500px;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 10px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accounts-title{
+    font-family: "Texturina", serif;
+    font-optical-sizing: auto;
+    font-size: 50px;
+}
+
+.accounts-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.user-details,
+.user-address-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.input-firstname, .input-lastname, .input-email, .input-phone, .input-age, .input-gender,
+.input-street, .input-city, .input-state, .input-zipcode, .input-country {
+    font-family: "Trocchi", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 1px solid #ccc; 
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.input-firstname:focus, .input-lastname:focus, .input-email:focus, .input-phone:focus, .input-age:focus, .input-gender:focus,
+.input-street:focus, .input-city:focus, .input-state:focus, .input-zipcode:focus, .input-country:focus {
+    outline: none; 
+    border-color: black; 
+}
+
+.user-details-title,
+.user-address-title{
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.accounts-form-submit {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: grey 0.3s ease;
+    border: 4px solid rgb(48, 43, 43);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 47%;
+}
+
+.accounts-form-submit:hover{
+    border: 5px solid grey;
+
+}
+
+
+
+
+

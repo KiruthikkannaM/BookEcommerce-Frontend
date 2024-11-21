@@ -1,0 +1,46 @@
+.card-component {
+    width: 230px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 40px;
+  }
+  
+  .card-component:hover {
+    transform: translateY(-4px);
+  }
+  
+  .card-image-container {
+    height: 200px;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .card-image-container img {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent;
+  }
+  
+  .card-content {
+    padding: 16px;
+
+  }
+  
+  .card-title {
+    width: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
