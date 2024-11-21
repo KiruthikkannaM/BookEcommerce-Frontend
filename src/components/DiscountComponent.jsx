@@ -3,18 +3,21 @@ import axios from "axios";
 import { Typography,Card } from "antd";
 import "../components/DiscountComponent.css"
 import CardComponent from "./CardComponent";
+import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const {Text}=Typography;
 const DiscountComponent=()=>{
     const [discountBooks,setdiscountBooks]=useState([]);
     const [loading,setloading]=useState(true);
+    const navigate=useNavigate();
 
 
     useEffect(()=>{
         const fetchbooks=async ()=>{
             try{
-                const result=await axios.get("https://booklust-backend.onrender.com",
+                const result=await axios.get("https://booklust-backend.onrender.com/books",
                     {params: {category:"discount",limit:5},}
                 )
                 setdiscountBooks(result.data.books||[]);
@@ -36,7 +39,7 @@ const DiscountComponent=()=>{
                         DISCOUNT BOOKS
                     </Text>
                 </div>
-                <a href="/discount" className="view-more-link">
+                <a onClick={()=>navigate('/discount')} className="view-more-link">
                     View More <span>›</span>
                 </a>
             </div>

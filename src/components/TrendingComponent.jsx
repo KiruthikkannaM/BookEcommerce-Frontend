@@ -7,12 +7,13 @@ const {Text}=Typography;
 import "../components/TrendingComponent.css"
 
 import CardComponent from "./CardComponent";
+import { useNavigate } from "react-router-dom";
 
 
 const TrendingComponent=()=>{
     const [trendingBooks,setTrendingBooks]=useState([]);
     const [loading, setLoading] = useState(true);
-    const userId=1;
+    const navigate=useNavigate();
 
     useEffect(()=>{
         const fetchBooks=async ()=>{
@@ -42,7 +43,7 @@ const TrendingComponent=()=>{
                         LATEST COLLECTIONS
                     </Text>
                 </div>
-                <a href="/trending" className="view-more-link">
+                <a onClick={()=>navigate('/trending')} className="view-more-link">
                     View More <span>›</span>
                 </a>
             </div>

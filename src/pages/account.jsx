@@ -55,10 +55,10 @@ function Account(){
         try{
             let response;
             if(notFound){
-                response = await axios.post(`http://localhost:3000/account/${userId}`, accountDetails);
+                response = await axios.post(`https://booklust-backend.onrender.com/account/${userId}`, accountDetails);
                 alert("Account created successfully");
             }else{
-                const response=await axios.put(`http://localhost:3000/account/${userId}`,accountDetails);
+                const response=await axios.put(`https://booklust-backend.onrender.com/account/${userId}`,accountDetails);
                 alert("Account details updated successfully");
 
 
