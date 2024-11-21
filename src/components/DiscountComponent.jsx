@@ -4,7 +4,7 @@ import { Typography,Card } from "antd";
 import "../components/DiscountComponent.css"
 import CardComponent from "./CardComponent";
 
-const API_URL="http://localhost:3000/books";
+const API_URL="https://booklust-backend.onrender.com";
 const {Text}=Typography;
 const DiscountComponent=()=>{
     const [discountBooks,setdiscountBooks]=useState([]);

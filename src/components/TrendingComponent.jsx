@@ -17,7 +17,7 @@ const TrendingComponent=()=>{
     useEffect(()=>{
         const fetchBooks=async ()=>{
             try{
-                const response =await axios.get("http://localhost:3000/books",{
+                const response =await axios.get("https://booklust-backend.onrender.com/books",{
                     params: {category:"trending",limit:5},
                 });
                 setTrendingBooks(response.data.books||[]);

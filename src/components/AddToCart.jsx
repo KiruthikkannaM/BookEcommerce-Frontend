@@ -7,7 +7,7 @@ const AddToCart = ({ userId, itemId,price }) => {
   const addToCart = async () => {
     try {
       console.log("Sending data:", { userId, itemId });  
-      const response = await axios.post("http://localhost:3000/add-to-cart", {
+      const response = await axios.post("https://booklust-backend.onrender.com/add-to-cart", {
         userId: userId,  
         itemId: itemId, 
         price: price,
