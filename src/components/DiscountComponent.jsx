@@ -4,7 +4,7 @@ import { Typography,Card } from "antd";
 import "../components/DiscountComponent.css"
 import CardComponent from "./CardComponent";
 
-const API_URL="https://booklust-backend.onrender.com";
+
 const {Text}=Typography;
 const DiscountComponent=()=>{
     const [discountBooks,setdiscountBooks]=useState([]);
@@ -14,7 +14,7 @@ const DiscountComponent=()=>{
     useEffect(()=>{
         const fetchbooks=async ()=>{
             try{
-                const result=await axios.get(API_URL,
+                const result=await axios.get("https://booklust-backend.onrender.com",
                     {params: {category:"discount",limit:5},}
                 )
                 setdiscountBooks(result.data.books||[]);

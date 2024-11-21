@@ -17,7 +17,7 @@ function Cart(){
     useEffect(()=>{
         const cartFetch=async ()=>{
             try{
-                const response=await axios.get(`http://localhost:3000/cart/${userId}`);
+                const response=await axios.get(`https://booklust-backend.onrender.com/cart/${userId}`);
                 if(response.status===200){
                     console.log("cart items:",response.data);
                     setCartItems(response.data);
@@ -39,7 +39,7 @@ function Cart(){
 
     const handleRemoveItem=async (isbn)=>{
       try{
-        const response = await axios.delete("http://localhost:3000/delete-item",{
+        const response = await axios.delete("https://booklust-backend.onrender.com/delete-item",{
           data:{userId: userId,
           itemId:isbn,}
         });
